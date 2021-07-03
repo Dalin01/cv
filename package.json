@@ -1,9 +1,13 @@
 {
+  "homepage": "http://dalin01.github.io/cv",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "dev": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "parcel-bundler": "^1.12.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.1"
   },
