@@ -10608,7 +10608,7 @@ if ("development" !== "production") {
       }
 
       var eventName = 'on' + eventNameSuffix;
-      var isSupported = eventName in document;
+      var isSupported = (eventName in document);
 
       if (!isSupported) {
         var element = document.createElement('div');
@@ -30790,30 +30790,21 @@ var _jsxRuntime = require("react/jsx-runtime");
 var ImageName = function ImageName(_ref) {
   var name = _ref.name,
       width = _ref.width;
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-display-container",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("img", {
-        src: require("./images/darlington.jpeg"),
-        alt: "Avatar",
-        style: {
-          width: width
-        }
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("div", {
-        className: "w3-display-bottomleft w3-container w3-text-black",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("h2", {
-          children: name
-        })
-      })]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-display-container",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("img", {
+      src: require("./images/darlington.jpeg"),
+      alt: "Avatar",
+      style: {
+        width: width
+      }
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      className: "w3-display-bottomleft w3-container w3-text-black",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+        children: name
+      })
+    })]
+  });
 };
 
 var _default = ImageName;
@@ -30831,16 +30822,11 @@ var _jsxRuntime = require("react/jsx-runtime");
 var IconText = function IconText(_ref) {
   var icon = _ref.icon,
       text = _ref.text;
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("p", {
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("i", {
-        className: icon
-      }), text]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+      className: icon
+    }), text]
+  });
 };
 
 var _default = IconText;
@@ -30859,21 +30845,14 @@ var Title = function Title(_ref) {
   var icon = _ref.icon,
       text = _ref.text,
       classDef = _ref.classDef;
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)("p", {
-      className: classDef,
-      children:
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("b", {
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: icon
-        }), text]
-      })
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+    className: classDef,
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("b", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: icon
+      }), text]
     })
-  );
+  });
 };
 
 var _default = Title;
@@ -30897,21 +30876,16 @@ var _default = function _default(_ref) {
   if (proficiency === 'B2') text = '70%';
   if (proficiency === 'C1') text = '90%';
   if (proficiency === 'Native') text = '100%';
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)("div", {
-      className: "w3-light-grey w3-round-xlarge w3-small",
-      children:
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("div", {
-        className: "w3-container w3-center w3-round-xlarge w3-teal",
-        style: {
-          width: text
-        },
-        children: proficiency
-      })
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    className: "w3-light-grey w3-round-xlarge w3-small",
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      className: "w3-container w3-center w3-round-xlarge w3-teal",
+      style: {
+        width: text
+      },
+      children: proficiency
     })
-  );
+  });
 };
 
 exports.default = _default;
@@ -30941,112 +30915,87 @@ skillSet.React = '70%';
 skillSet.Angular = '80%';
 skillSet.Python = '90%';
 skillSet.Java = '50%';
+skillSet.JaveScript = '70%';
 var LanguageSet = {};
 LanguageSet.English = 'C1';
 LanguageSet.German = 'A2';
 LanguageSet.Igbo = 'Native';
 
 var Details = function Details() {
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-third",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("div", {
-        className: "w3-white w3-text-grey w3-card-4",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)(_ImageName.default, {
-          name: "Darlington Onwuama",
-          width: "100%"
-        }),
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsxs)("div", {
-          className: "w3-container",
-          children: [
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_IconText.default, {
-            icon: "fa fa-briefcase ".concat(customClass),
-            text: "Software Engineer"
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_IconText.default, {
-            icon: "fa fa-home ".concat(customClass),
-            text: "Essen, Germany"
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)("a", {
-            href: "https://example.com/faq.html",
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-third",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "w3-white w3-text-grey w3-card-4",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_ImageName.default, {
+        name: "Darlington Onwuama",
+        width: "100%"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "w3-container",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-briefcase ".concat(customClass),
+          text: "Software Engineer"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-home ".concat(customClass),
+          text: "Essen, Germany"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-envelope ".concat(customClass),
+          text: /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+            href: "mailto:darlingtonsomto@gmail.com",
             rel: "noreferrer",
-            children: "FAQ"
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_IconText.default, {
-            icon: "fa fa-envelope ".concat(customClass),
-            text: "darlingtonsomto@gmail.com"
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_IconText.default, {
-            icon: "fa fa-phone ".concat(customClass),
-            text: "+49 163 638 3246"
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)("hr", {}),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_Title.default, {
-            icon: "fa fa-asterisk fa-fw w3-margin-right w3-text-teal",
-            text: "My skills",
-            classDef: "w3-large"
-          }), Object.entries(skillSet).map(function (value) {
-            return (
-              /*#__PURE__*/
-              (0, _jsxRuntime.jsxs)("div", {
-                children: [
-                /*#__PURE__*/
-                (0, _jsxRuntime.jsx)("p", {
-                  children: value[0]
-                }),
-                /*#__PURE__*/
-                (0, _jsxRuntime.jsx)(_Skill.default, {
-                  proficiency: value[1]
-                })]
-              }, value[0])
-            );
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)("br", {}),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)("hr", {}),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_Title.default, {
-            icon: "fa fa-globe fa-fw w3-margin-right w3-text-teal",
-            text: "Languages",
-            classDef: "w3-large"
-          }), Object.entries(LanguageSet).map(function (value) {
-            return (
-              /*#__PURE__*/
-              (0, _jsxRuntime.jsxs)("div", {
-                children: [
-                /*#__PURE__*/
-                (0, _jsxRuntime.jsx)("p", {
-                  children: value[0]
-                }),
-                /*#__PURE__*/
-                (0, _jsxRuntime.jsx)(_Skill.default, {
-                  proficiency: value[1]
-                })]
-              }, value[0])
-            );
-          }),
-          /*#__PURE__*/
-          (0, _jsxRuntime.jsx)("br", {})]
-        })]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("br", {})]
-    })
-  );
+            children: "darlingtonsomto@gmail.com"
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-linkedin ".concat(customClass),
+          text: /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+            href: "https://www.linkedin.com/in/darlington-onwuama/",
+            rel: "noreferrer",
+            children: "linkedin.com/in/darlington-onwuama"
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-github ".concat(customClass),
+          text: /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+            href: "https://github.com/Dalin01",
+            rel: "noreferrer",
+            children: "Dalin01"
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-twitter ".concat(customClass),
+          text: /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+            href: "https://twitter.com/Somtodarlington",
+            rel: "noreferrer",
+            children: "@Somtodarlington"
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_IconText.default, {
+          icon: "fa fa-phone ".concat(customClass),
+          text: "+49 163 638 3246"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Title.default, {
+          icon: "fa fa-asterisk fa-fw w3-margin-right w3-text-teal",
+          text: "My skills",
+          classDef: "w3-large"
+        }), Object.entries(skillSet).map(function (value) {
+          return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+              children: value[0]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Skill.default, {
+              proficiency: value[1]
+            })]
+          }, value[0]);
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Title.default, {
+          icon: "fa fa-globe fa-fw w3-margin-right w3-text-teal",
+          text: "Languages",
+          classDef: "w3-large"
+        }), Object.entries(LanguageSet).map(function (value) {
+          return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+              children: value[0]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Skill.default, {
+              proficiency: value[1]
+            })]
+          }, value[0]);
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {})]
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {})]
+  });
 };
 
 var _default = Details;
@@ -31065,95 +31014,54 @@ var BlockQuoteDifferent = function BlockQuoteDifferent() {
   var text1 = 'Support in the development of Site Suitability Software. Support in assessing site suitability as part of software testing and validation.';
   var text2 = 'Software development using Python for Turbine Load Evaluation, LCOE KPI Benchmarking, and Floating Comparative LCOE. Software testing (unit and functional testing). Working extensively using Git. Designed and implemented a NoSQL database using MongoDB for Civil Foundation and BoP OEM specifications. Working with Azure Cloud services - Function/Logic apps, VMs, etc. Turbine foundation SCADA data acquisition, cleaning, and manipulation.';
   var text3 = 'Designed and developed a Balance of Plants CAPEX tool using Python. Documentation of Civil standards. Prepared and managed the weekly team dashboard in Excel/VB.';
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-container",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("h5", {
-        className: "w3-opacity",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("b", {
-          children: "RWE Renewables"
-        })
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("h6", {
-        className: "w3-opacity",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          children: "Site Suitability Software Engineer"
-        })
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("h6", {
-        className: "w3-text-teal",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: "fa fa-calendar fa-fw w3-margin-right"
-        }), "May 2021 - ",
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("span", {
-          className: "w3-tag w3-teal w3-round",
-          children: "PRESENT"
-        })]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("p", {
-        children: text1
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("h6", {
-        className: "w3-opacity",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          children: "Computational Engineer/Tool Developer"
-        })
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("h6", {
-        className: "w3-text-teal",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: "fa fa-calendar fa-fw w3-margin-right"
-        }), "July 2020 - April 2021"]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("p", {
-        children: text2
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("h6", {
-        className: "w3-opacity",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          children: "Working Student"
-        })
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("h6", {
-        className: "w3-text-teal",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: "fa fa-calendar fa-fw w3-margin-right"
-        }), "Oct 2019 - June 2020"]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("p", {
-        children: text3
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("hr", {})]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-container",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h5", {
+      className: "w3-opacity",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
+        children: "RWE Renewables"
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h6", {
+      className: "w3-opacity",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        children: "Site Suitability Software Engineer"
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("h6", {
+      className: "w3-text-teal",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: "fa fa-calendar fa-fw w3-margin-right"
+      }), "May 2021 - ", /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+        className: "w3-tag w3-teal w3-round",
+        children: "PRESENT"
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+      children: text1
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h6", {
+      className: "w3-opacity",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        children: "Computational Engineer/Tool Developer"
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("h6", {
+      className: "w3-text-teal",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: "fa fa-calendar fa-fw w3-margin-right"
+      }), "July 2020 - April 2021"]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+      children: text2
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h6", {
+      className: "w3-opacity",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        children: "Working Student"
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("h6", {
+      className: "w3-text-teal",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: "fa fa-calendar fa-fw w3-margin-right"
+      }), "Oct 2019 - June 2020"]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+      children: text3
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {})]
+  });
 };
 
 exports.BlockQuoteDifferent = BlockQuoteDifferent;
@@ -31166,46 +31074,27 @@ var BlockQuote = function BlockQuote(_ref) {
       end = _ref.end;
   var text = '';
   if (details === 'eon') text = 'Developed functional and interactive Java-based web applications using Spring boot framework and React. Designed and implemented a SQL database. Provided technical support to the site suitability team.';else if (details === 'freelance') text = 'Designed and built Web and Android mobile applications mostly using PHP and Java. Sample personal project on Google Play:  My Diary';else if (details === 'prima') text = 'Designed programs that were used on PABX, Switch telephones, and other Intercom equipment using mostly C++.';else if (details === 'ice') text = 'Taught Computer Science, Physics, Mathematics, Chemistry, and Basic technology.';else text = details;
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-container",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("h5", {
-        className: "w3-opacity",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("b", {
-          children: position
-        })
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("h6", {
-        className: "w3-opacity",
-        children:
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          children: institute
-        })
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("h6", {
-        className: "w3-text-teal",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: "fa fa-calendar fa-fw w3-margin-right"
-        }), start, " - ", end]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("p", {
-        children: text
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)("hr", {})]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-container",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h5", {
+      className: "w3-opacity",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
+        children: position
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h6", {
+      className: "w3-opacity",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        children: institute
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("h6", {
+      className: "w3-text-teal",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: "fa fa-calendar fa-fw w3-margin-right"
+      }), start, " - ", end]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+      children: text
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {})]
+  });
 };
 
 exports.BlockQuote = BlockQuote;
@@ -31224,56 +31113,39 @@ var _jsxRuntime = require("react/jsx-runtime");
 var Work = function Work(_ref) {
   var icon = _ref.icon,
       title = _ref.title;
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-container w3-card w3-white w3-margin-bottom",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("h2", {
-        className: "w3-text-grey w3-padding-16",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: "fa fa-".concat(icon, " fa-fw w3-margin-right w3-xxlarge w3-text-teal")
-        }), title]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuoteDifferent, {}),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
-        position: "Working Student",
-        institute: "EON Climate and Renewables",
-        details: "eon",
-        start: "June 2018",
-        end: "Oct 2019"
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
-        position: "Freelance Software Developer",
-        institute: "Freelance",
-        details: "freelance",
-        start: "May 2016",
-        end: "Oct 2017"
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
-        position: "Maintenance Officer",
-        institute: "Prima Telecommunications",
-        details: "prima",
-        start: "Oct 2016",
-        end: "Aug 2017"
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
-        position: "Teacher",
-        institute: "Institute of Continuing Education",
-        details: "ice",
-        start: "Oct 2015",
-        end: "Oct 2016"
-      })]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-container w3-card w3-white w3-margin-bottom",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("h2", {
+      className: "w3-text-grey w3-padding-16",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: "fa fa-".concat(icon, " fa-fw w3-margin-right w3-xxlarge w3-text-teal")
+      }), title]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuoteDifferent, {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "Working Student",
+      institute: "EON Climate and Renewables",
+      details: "eon",
+      start: "June 2018",
+      end: "Oct 2019"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "Freelance Software Developer",
+      institute: "Freelance",
+      details: "freelance",
+      start: "May 2016",
+      end: "Oct 2017"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "Maintenance Officer",
+      institute: "Prima Telecommunications",
+      details: "prima",
+      start: "Oct 2016",
+      end: "Aug 2017"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "Teacher",
+      institute: "Institute of Continuing Education",
+      details: "ice",
+      start: "Oct 2015",
+      end: "Oct 2016"
+    })]
+  });
 };
 
 var _default = Work;
@@ -31293,38 +31165,39 @@ var _jsxRuntime = require("react/jsx-runtime");
 var School = function School(_ref) {
   var icon = _ref.icon,
       title = _ref.title;
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-container w3-card w3-white w3-margin-bottom",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("h2", {
-        className: "w3-text-grey w3-padding-16",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("i", {
-          className: "fa fa-".concat(icon, " fa-fw w3-margin-right w3-xxlarge w3-text-teal")
-        }), title]
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
-        position: "M.Sc. Computational Engineering",
-        institute: "Ruhr University Bochum",
-        details: "Grade: 1.5 (Sehr Gut/Very Good)",
-        start: "Oct 2017",
-        end: "Feb 2020"
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
-        position: "B.Eng. Industrial/Production Engineering",
-        institute: "Nnamdi Azikiwe University",
-        details: "Grade: 1.52 (Gut/Good) and Best Graduation Student",
-        start: "Sept 2009",
-        end: "Aug 2014"
-      })]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-container w3-card w3-white w3-margin-bottom",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("h2", {
+      className: "w3-text-grey w3-padding-16",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+        className: "fa fa-".concat(icon, " fa-fw w3-margin-right w3-xxlarge w3-text-teal")
+      }), title]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "Cloud DevOps Engineer",
+      institute: "Udacity/The Black in Technology Foundation -> Scholarship",
+      details: "Introduction to AWS cloud services",
+      start: "April 2021",
+      end: "June 2021"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "M.Sc. Computational Engineering",
+      institute: "Ruhr University Bochum",
+      details: "Grade: 1.5 (Sehr Gut/Very Good)",
+      start: "Oct 2017",
+      end: "Feb 2020"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "Intermediate Android Developer",
+      institute: "Andela Scholarship, supported by Google and Udacity",
+      details: "Android mobile development, Java, XML, Git.",
+      start: "March 2017",
+      end: "Nov 2017"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_BlockQuote.BlockQuote, {
+      position: "B.Eng. Industrial/Production Engineering",
+      institute: "Nnamdi Azikiwe University",
+      details: "Grade: 1.52 (Gut/Good) and Best Graduation Student",
+      start: "Sept 2009",
+      end: "Aug 2014"
+    })]
+  });
 };
 
 var _default = School;
@@ -31348,27 +31221,19 @@ var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var work = {};
-var study = {};
 work.eon = 'Developed functional and interactive Java-based web applications using Spring boot framework and React. Designed and implemented a SQL database. Provided technical support to the site suitability team.';
 
 var Content = function Content() {
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsxs)("div", {
-      className: "w3-twothird",
-      children: [
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_Work.default, {
-        icon: "suitcase",
-        title: "Work Experience"
-      }),
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsx)(_School.default, {
-        icon: "certificate",
-        title: "Education"
-      })]
-    })
-  );
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "w3-twothird",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Work.default, {
+      icon: "suitcase",
+      title: "Work Experience"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_School.default, {
+      icon: "certificate",
+      title: "Education"
+    })]
+  });
 };
 
 var _default = Content;
@@ -31387,27 +31252,16 @@ var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return (
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)("div", {
-      children:
-      /*#__PURE__*/
-      (0, _jsxRuntime.jsxs)("div", {
-        className: "w3-row-padding",
-        children: [
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)(_Details.default, {}),
-        /*#__PURE__*/
-        (0, _jsxRuntime.jsx)(_Content.default, {})]
-      })
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "w3-row-padding",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Details.default, {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Content.default, {})]
     })
-  );
+  });
 };
 
-(0, _reactDom.render)(
-/*#__PURE__*/
-(0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
-},{"react-dom":"../node_modules/react-dom/index.js","./Details":"Details.js","./Content":"Content.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _reactDom.render)( /*#__PURE__*/(0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
+},{"react-dom":"../node_modules/react-dom/index.js","./Details":"Details.js","./Content":"Content.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -31435,7 +31289,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61171" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60401" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -31466,8 +31320,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 
@@ -31610,5 +31465,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel/src/builtins/hmr-runtime.js","App.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","App.js"], null)
 //# sourceMappingURL=/App.d36a57b6.js.map

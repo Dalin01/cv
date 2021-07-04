@@ -8,11 +8,25 @@ const School = ({ icon, title }) => {
         {title}
       </h2>
       <BlockQuote
+        position='Cloud DevOps Engineer'
+        institute='Udacity/The Black in Technology Foundation -> Scholarship'
+        details= 'Introduction to AWS cloud services'
+        start='April 2021'
+        end='June 2021'
+      />
+      <BlockQuote
         position='M.Sc. Computational Engineering'
         institute='Ruhr University Bochum'
         details= 'Grade: 1.5 (Sehr Gut/Very Good)'
         start='Oct 2017'
         end='Feb 2020'
+      />
+      <BlockQuote
+        position='Intermediate Android Developer'
+        institute='Andela Scholarship, supported by Google and Udacity'
+        details= 'Android mobile development, Java, XML, Git.'
+        start='March 2017'
+        end='Nov 2017'
       />
       <BlockQuote
         position='B.Eng. Industrial/Production Engineering'

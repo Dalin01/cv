@@ -3,7 +3,6 @@ import Work from "./Work";
 import School from "./School";
 
 const work = {}
-const study = {}
 
 work.eon = 'Developed functional and interactive Java-based web applications using Spring boot framework and React. Designed and implemented a SQL database. Provided technical support to the site suitability team.'
 
